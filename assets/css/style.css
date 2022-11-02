@@ -8,6 +8,20 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+@font-face{
+  font-family: Monument Extended;
+  font-style: normal;
+  font-weight: 400;
+  src: url(../../fonts/MonumentExtended-Regular.woff) format('woff')
+}
+  
+@font-face{
+  font-family: Monument Extended;
+  font-style: normal;
+  font-weight: 800;
+  src: url(../../fonts/MonumentExtended-Ultrabold.woff) format('woff')
+}
+
 body {
   font-family: 'Monument Extended', sans-serif;
   letter-spacing: 0px;
