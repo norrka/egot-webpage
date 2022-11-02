@@ -918,16 +918,18 @@ section {
   display: inline-block;
   color: #fff;
   line-height: 1;
-  padding: 8px 0;
+  padding: 10px 0;
   margin-right: 4px;
   border-radius: 50%;
   text-align: center;
-  width: 36px;
-  height: 36px;
+  width: 43px;
+  height: 43px;
   transition: 0.3s;
 }
 #footer .footer-top .social-links a:hover {
-  background: #67b0d1;
+  background: rgba(255, 255, 255, 0.2);
+  width: 55px;
+  height: 55px;
   color: #fff;
   text-decoration: none;
 }
