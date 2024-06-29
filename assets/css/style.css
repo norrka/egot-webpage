@@ -249,7 +249,6 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(68,58,92,1);
   transition: 0.3s;
 }
 .navbar-mobile .mobile-nav-toggle {
@@ -260,22 +259,22 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-mobile ul {
   display: block;
   position: absolute;
-  top: 55px;
-  right: 15px;
+  top: 0px;
+  right: 0px;
   bottom: 15px;
-  left: 15px;
+  left: 40%;
   padding: 10px 0;
-  background-color: #fff;
+  background-color: #395c80c4;
   overflow-y: auto;
   transition: 0.3s;
 }
 .navbar-mobile a, .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color:rgba(68,58,92,0.5);
+  color:rgba(200, 197, 197, 0.566);
 }
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
-  color: rgba(68,58,92,1);
+  color: rgb(255, 255, 255);
 }
 .navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
   margin: 15px;
@@ -301,7 +300,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 12px;
 }
 .navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
-  color: rgba(68,58,92,1);
+  background-color: #395c80c4;
 }
 .navbar-mobile .dropdown > .dropdown-active {
   display: block;
