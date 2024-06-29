@@ -21,7 +21,7 @@ body {
   color: #ffffff;
   background-size: cover;
   background-position: center;
-  overflow: scroll;
+  overflow: auto;
 }
 
 a {
