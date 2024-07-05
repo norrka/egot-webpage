@@ -49,6 +49,41 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the back side */
+.flip-card-back {
+  transform: rotateY(180deg);
+}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -374,17 +409,17 @@ hr {
 }
 @media (max-width: 1024px) {
   #hero h1 {
-    font-size: 60px;
+    font-size: 70px;
     line-height: 1;
   }
 }
 @media (max-width: 768px) {
   #hero h1 {
-    font-size: 50px;
+    font-size: 60px;
     line-height: 1;
   }
   #hero h2 {
-    font-size: 18px;
+    font-size: 17px;
     line-height: 24px;
     margin-bottom: 30px;
   }
@@ -451,6 +486,11 @@ section {
   text-align: left;
 }
 
+@media (max-width: 768px) {
+  .section-title h2 {
+    font-size: 25px;
+  }
+}
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
@@ -497,6 +537,8 @@ section {
 --------------------------------------------------------------*/
 .services .icon-box {
   padding: 50px;
+  width: 100%;
+  height: 350px;
   position: relative;
   overflow: hidden;
   background: None;
